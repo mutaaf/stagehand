@@ -1,0 +1,12 @@
+{
+  "name": "stagehand",
+  "version": "1.0.0",
+  "description": "The shared backstage code for the Workers on mutaafaziz.com: operator auth (Cloudflare Access, with a signed-cookie fallback), token checks and one log shape.",
+  "license": "MIT",
+  "type": "module",
+  "exports": { ".": "./src/index.mjs" },
+  "files": ["src"],
+  "engines": { "node": ">=22" },
+  "scripts": { "test": "node --test \"test/*.test.mjs\"", "check": "npm test" },
+  "dependencies": { "jose": "^6.1.0" }
+}
